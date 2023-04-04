@@ -1,0 +1,2327 @@
+Started GET "/me" for 127.0.0.1 at 2023-04-01 04:25:08 +0300
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 2 pending migrations:
+
+20221004231502_create_users.rb
+20221004232957_create_recipes.rb
+
+
+):
+  
+activerecord (6.1.3.2) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.3.2) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.3.2) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.3.2) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.3.2) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.3.2) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+railties (6.1.3.2) lib/rails/engine.rb:539:in `call'
+puma (5.3.2) lib/puma/configuration.rb:249:in `call'
+puma (5.3.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.3.2) lib/puma/thread_pool.rb:338:in `with_force_shutdown'
+puma (5.3.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.3.2) lib/puma/server.rb:438:in `process_client'
+puma (5.3.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started POST "/signup" for 127.0.0.1 at 2023-04-01 04:29:04 +0300
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 2 pending migrations:
+
+20221004231502_create_users.rb
+20221004232957_create_recipes.rb
+
+
+):
+  
+activerecord (6.1.3.2) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.3.2) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.3.2) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.3.2) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.3.2) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.3.2) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+railties (6.1.3.2) lib/rails/engine.rb:539:in `call'
+puma (5.3.2) lib/puma/configuration.rb:249:in `call'
+puma (5.3.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.3.2) lib/puma/thread_pool.rb:338:in `with_force_shutdown'
+puma (5.3.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.3.2) lib/puma/server.rb:438:in `process_client'
+puma (5.3.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20221004231502)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password_digest" varchar, "image_url" varchar, "bio" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221004231502"]]
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateRecipes (20221004232957)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "recipes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "instructions" text, "minutes_to_complete" integer, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_9606fce865"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_recipes_on_user_id" ON "recipes" ("user_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221004232957"]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-04-01 01:33:46.574303"], ["updated_at", "2023-04-01 01:33:46.574303"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/me" for 127.0.0.1 at 2023-04-01 04:34:10 +0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorized'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.21ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 39ms (Views: 4.1ms | ActiveRecord: 1.2ms | Allocations: 3802)
+
+
+Started POST "/login" for 127.0.0.1 at 2023-04-01 04:34:13 +0300
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"lizdmukami", "password"=>"[FILTERED]", "session"=>{"username"=>"lizdmukami", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "lizdmukami"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 401 Unauthorized in 12ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 3897)
+
+
+Started POST "/signup" for 127.0.0.1 at 2023-04-01 04:34:58 +0300
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"lizdmukami", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "image_url"=>"https://images.unsplash.com/photo-1613730317814-1cede28e0151?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGJsYWNrJTIwZ2lybHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60", "bio"=>"Ilove it here"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "lizdmukami"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "image_url", "bio", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["username", "lizdmukami"], ["password_digest", "$2a$12$BHXwgD1AZcUDw90GMmzyfe2hIlCodhvk6U6cRI220hmcVSSn.E5UW"], ["image_url", "https://images.unsplash.com/photo-1613730317814-1cede28e0151?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGJsYWNrJTIwZ2lybHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"], ["bio", "Ilove it here"], ["created_at", "2023-04-01 01:34:59.118044"], ["updated_at", "2023-04-01 01:34:59.118044"]]
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "lizdmukami"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.39ms)
+Completed 201 Created in 248ms (Views: 4.3ms | ActiveRecord: 2.7ms | Allocations: 10302)
+
+
+Started GET "/recipes" for 127.0.0.1 at 2023-04-01 04:34:59 +0300
+Processing by RecipesController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorized'
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.06ms)
+Completed 201 Created in 7ms (Views: 1.3ms | ActiveRecord: 0.4ms | Allocations: 2265)
+
+
+Started POST "/recipes" for 127.0.0.1 at 2023-04-01 04:35:25 +0300
+Processing by RecipesController#create as */*
+  Parameters: {"title"=>"My Awesome Recipe", "instructions"=>"Here's how you make it.\n  \n## Ingredients\n\n- 1c Sugar\n- 1c Spice\n\n## Instructions\n\n**Mix** sugar and spice. _Bake_ for 30 minutes.\n  ", "minutes_to_complete"=>"30", "recipe"=>{"title"=>"My Awesome Recipe", "instructions"=>"Here's how you make it.\n  \n## Ingredients\n\n- 1c Sugar\n- 1c Spice\n\n## Instructions\n\n**Mix** sugar and spice. _Bake_ for 30 minutes.\n  ", "minutes_to_complete"=>"30"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorized'
+[31mUnpermitted parameter: :recipe[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/recipes_controller.rb:10:in `create'
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "instructions", "minutes_to_complete", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "My Awesome Recipe"], ["instructions", "Here's how you make it.\n  \n## Ingredients\n\n- 1c Sugar\n- 1c Spice\n\n## Instructions\n\n**Mix** sugar and spice. _Bake_ for 30 minutes.\n  "], ["minutes_to_complete", 30], ["user_id", 1], ["created_at", "2023-04-01 01:35:25.885920"], ["updated_at", "2023-04-01 01:35:25.885920"]]
+  ↳ app/controllers/recipes_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/recipes_controller.rb:10:in `create'
+[active_model_serializers] Rendered RecipeSerializer with ActiveModelSerializers::Adapter::Attributes (0.56ms)
+Completed 201 Created in 22ms (Views: 4.1ms | ActiveRecord: 3.0ms | Allocations: 11316)
+
+
+Started GET "/recipes" for 127.0.0.1 at 2023-04-01 04:35:25 +0300
+Processing by RecipesController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorized'
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/recipes_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.87ms)
+Completed 201 Created in 8ms (Views: 4.9ms | ActiveRecord: 0.4ms | Allocations: 2379)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2023-04-01 04:36:33 +0300
+Processing by SessionsController#destroy as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorized'
+Completed 204 No Content in 3ms (ActiveRecord: 0.2ms | Allocations: 594)
+
+
+Started GET "/me" for 127.0.0.1 at 2023-04-01 04:39:07 +0300
+Processing by UsersController#show as */*
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorized'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 5ms (Views: 0.8ms | ActiveRecord: 1.1ms | Allocations: 844)
+
+
+Started POST "/login" for 127.0.0.1 at 2023-04-01 04:39:10 +0300
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"lizdmukami", "password"=>"[FILTERED]", "session"=>{"username"=>"lizdmukami", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "lizdmukami"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.17ms)
+Completed 201 Created in 245ms (Views: 0.6ms | ActiveRecord: 0.7ms | Allocations: 854)
+
+
+Started GET "/recipes" for 127.0.0.1 at 2023-04-01 04:39:11 +0300
+Processing by RecipesController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorized'
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/recipes_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.65ms)
+Completed 201 Created in 4ms (Views: 2.8ms | ActiveRecord: 0.2ms | Allocations: 2333)
+
+
+Started POST "/recipes" for 127.0.0.1 at 2023-04-01 04:42:21 +0300
+Processing by RecipesController#create as */*
+  Parameters: {"title"=>"My Awesome Recipe2", "instructions"=>"Here's how you make it.\n  \n## Ingredients\n\n- 1c Sugar\n- 1c Spice\n\n## Instructions\n\n**Mix** sugar and spice. _Bake_ for 30 minutes.\n  ", "minutes_to_complete"=>"30", "recipe"=>{"title"=>"My Awesome Recipe2", "instructions"=>"Here's how you make it.\n  \n## Ingredients\n\n- 1c Sugar\n- 1c Spice\n\n## Instructions\n\n**Mix** sugar and spice. _Bake_ for 30 minutes.\n  ", "minutes_to_complete"=>"30"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorized'
+[31mUnpermitted parameter: :recipe[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/recipes_controller.rb:10:in `create'
+  [1m[36mRecipe Create (0.5ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "instructions", "minutes_to_complete", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "My Awesome Recipe2"], ["instructions", "Here's how you make it.\n  \n## Ingredients\n\n- 1c Sugar\n- 1c Spice\n\n## Instructions\n\n**Mix** sugar and spice. _Bake_ for 30 minutes.\n  "], ["minutes_to_complete", 30], ["user_id", 1], ["created_at", "2023-04-01 01:42:21.183274"], ["updated_at", "2023-04-01 01:42:21.183274"]]
+  ↳ app/controllers/recipes_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/recipes_controller.rb:10:in `create'
+[active_model_serializers] Rendered RecipeSerializer with ActiveModelSerializers::Adapter::Attributes (0.6ms)
+Completed 201 Created in 12ms (Views: 1.5ms | ActiveRecord: 2.5ms | Allocations: 4735)
+
+
+Started GET "/recipes" for 127.0.0.1 at 2023-04-01 04:42:21 +0300
+Processing by RecipesController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorized'
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/recipes_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/recipes_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (10.55ms)
+Completed 201 Created in 16ms (Views: 13.5ms | ActiveRecord: 0.4ms | Allocations: 3407)
+
+
+Started GET "/me" for 127.0.0.1 at 2023-04-02 02:41:08 +0300
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorized'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 36ms (Views: 1.5ms | ActiveRecord: 2.3ms | Allocations: 3721)
+
+
+Started POST "/login" for 127.0.0.1 at 2023-04-02 02:41:20 +0300
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"lizdmukami", "password"=>"[FILTERED]", "session"=>{"username"=>"lizdmukami", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "lizdmukami"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.27ms)
+Completed 201 Created in 258ms (Views: 5.5ms | ActiveRecord: 1.0ms | Allocations: 8525)
+
+
+Started GET "/recipes" for 127.0.0.1 at 2023-04-02 02:41:21 +0300
+Processing by RecipesController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorized'
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/recipes_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/recipes_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (10.45ms)
+Completed 201 Created in 33ms (Views: 24.2ms | ActiveRecord: 2.3ms | Allocations: 10709)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2023-04-02 02:42:12 +0300
+Processing by SessionsController#destroy as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorized'
+Completed 204 No Content in 3ms (ActiveRecord: 0.3ms | Allocations: 614)
+
+
+Started POST "/login" for 127.0.0.1 at 2023-04-02 02:42:57 +0300
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"lizdmukami", "password"=>"[FILTERED]", "session"=>{"username"=>"lizdmukami", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "lizdmukami"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.21ms)
+Completed 201 Created in 240ms (Views: 0.6ms | ActiveRecord: 0.4ms | Allocations: 868)
+
+
+Started GET "/me" for 127.0.0.1 at 2023-04-02 13:41:06 +0300
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorized'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 9ms (Views: 1.2ms | ActiveRecord: 0.3ms | Allocations: 3721)
+
+
+Started POST "/login" for 127.0.0.1 at 2023-04-02 13:41:15 +0300
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"lizdmukami", "password"=>"[FILTERED]", "session"=>{"username"=>"lizdmukami", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "lizdmukami"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.29ms)
+Completed 201 Created in 256ms (Views: 11.3ms | ActiveRecord: 0.4ms | Allocations: 8525)
+
+
+Started GET "/recipes" for 127.0.0.1 at 2023-04-02 13:41:15 +0300
+Processing by RecipesController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorized'
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/recipes_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/recipes_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (6.91ms)
+Completed 201 Created in 22ms (Views: 14.7ms | ActiveRecord: 0.9ms | Allocations: 10711)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2023-04-02 13:42:20 +0300
+Processing by SessionsController#destroy as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorized'
+Completed 204 No Content in 2ms (ActiveRecord: 0.1ms | Allocations: 608)
+
+
+Started POST "/login" for 127.0.0.1 at 2023-04-02 17:39:49 +0300
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"lizdmukami", "password"=>"[FILTERED]", "session"=>{"username"=>"lizdmukami", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "lizdmukami"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.18ms)
+Completed 201 Created in 234ms (Views: 0.8ms | ActiveRecord: 0.4ms | Allocations: 1312)
+
+
+Started GET "/recipes" for 127.0.0.1 at 2023-04-02 17:39:49 +0300
+Processing by RecipesController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorized'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/recipes_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/recipes_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (7.41ms)
+Completed 201 Created in 13ms (Views: 9.9ms | ActiveRecord: 0.7ms | Allocations: 3442)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2023-04-02 18:47:23 +0300
+Processing by SessionsController#destroy as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:7:in `authorized'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorized'
+Completed 204 No Content in 5ms (ActiveRecord: 1.0ms | Allocations: 1057)
+
+
+Started POST "/signup" for 127.0.0.1 at 2023-04-02 18:47:39 +0300
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"lizdmukami", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "image_url"=>"https://images.unsplash.com/photo-1613730317814-1cede28e0151?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGJsYWNrJTIwZ2lybHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60", "bio"=>"hjfhxfgffjh"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "lizdmukami"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "lizdmukami"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 422 Unprocessable Entity in 258ms (Views: 0.5ms | ActiveRecord: 0.4ms | Allocations: 5302)
+
+
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20230403000954)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "email" varchar, "password_digest" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230403000954"]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateWorkouts (20230403001123)
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateWorkouts (20230403001123)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "workouts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "workout_name" varchar, "areas_targeted" text, "minutes_to_complete" integer, "date" varchar, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_40b8fd8af6"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE INDEX "index_workouts_on_user_id" ON "workouts" ("user_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230403001123"]]
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-04-03 00:15:15.565532"], ["updated_at", "2023-04-03 00:15:15.565532"]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-03 03:23:43 +0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-03 03:23:43 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-03 03:23:43 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-03 03:23:43 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-03 03:23:43 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-03 03:23:43 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-03 03:23:44 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-03 03:23:44 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-03 03:23:44 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-03 03:23:44 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-03 03:23:45 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/me" for 127.0.0.1 at 2023-04-03 03:24:49 +0300
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for UsersController
+Did you mean?  authorized):
+  
+actionpack (6.1.3.2) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.2) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.2) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+railties (6.1.3.2) lib/rails/engine.rb:539:in `call'
+puma (5.3.2) lib/puma/configuration.rb:249:in `call'
+puma (5.3.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.3.2) lib/puma/thread_pool.rb:338:in `with_force_shutdown'
+puma (5.3.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.3.2) lib/puma/server.rb:438:in `process_client'
+puma (5.3.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started POST "/signup" for 127.0.0.1 at 2023-04-03 03:25:26 +0300
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for UsersController
+Did you mean?  authorized):
+  
+actionpack (6.1.3.2) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.2) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.2) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+railties (6.1.3.2) lib/rails/engine.rb:539:in `call'
+puma (5.3.2) lib/puma/configuration.rb:249:in `call'
+puma (5.3.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.3.2) lib/puma/thread_pool.rb:338:in `with_force_shutdown'
+puma (5.3.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.3.2) lib/puma/server.rb:438:in `process_client'
+puma (5.3.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/me" for 127.0.0.1 at 2023-04-03 03:26:40 +0300
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for UsersController
+Did you mean?  authorized):
+  
+actionpack (6.1.3.2) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.2) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.2) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+railties (6.1.3.2) lib/rails/engine.rb:539:in `call'
+puma (5.3.2) lib/puma/configuration.rb:249:in `call'
+puma (5.3.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.3.2) lib/puma/thread_pool.rb:338:in `with_force_shutdown'
+puma (5.3.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.3.2) lib/puma/server.rb:438:in `process_client'
+puma (5.3.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started POST "/login" for 127.0.0.1 at 2023-04-03 03:26:42 +0300
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"lizdmukami", "password"=>"[FILTERED]", "session"=>{"username"=>"lizdmukami", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "lizdmukami"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 401 Unauthorized in 14ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 1320)
+
+
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/signup" for 127.0.0.1 at 2023-04-03 03:40:52 +0300
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for UsersController
+Did you mean?  authorized):
+  
+actionpack (6.1.3.2) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.2) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.2) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+railties (6.1.3.2) lib/rails/engine.rb:539:in `call'
+puma (5.3.2) lib/puma/configuration.rb:249:in `call'
+puma (5.3.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.3.2) lib/puma/thread_pool.rb:338:in `with_force_shutdown'
+puma (5.3.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.3.2) lib/puma/server.rb:438:in `process_client'
+puma (5.3.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/me" for 127.0.0.1 at 2023-04-03 09:07:14 +0300
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for UsersController
+Did you mean?  authorized):
+  
+actionpack (6.1.3.2) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.2) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.2) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+railties (6.1.3.2) lib/rails/engine.rb:539:in `call'
+puma (5.3.2) lib/puma/configuration.rb:249:in `call'
+puma (5.3.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.3.2) lib/puma/thread_pool.rb:338:in `with_force_shutdown'
+puma (5.3.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.3.2) lib/puma/server.rb:438:in `process_client'
+puma (5.3.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started POST "/signup" for 127.0.0.1 at 2023-04-03 09:07:46 +0300
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for UsersController
+Did you mean?  authorized):
+  
+actionpack (6.1.3.2) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.2) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.2) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+railties (6.1.3.2) lib/rails/engine.rb:539:in `call'
+puma (5.3.2) lib/puma/configuration.rb:249:in `call'
+puma (5.3.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.3.2) lib/puma/thread_pool.rb:338:in `with_force_shutdown'
+puma (5.3.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.3.2) lib/puma/server.rb:438:in `process_client'
+puma (5.3.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/me" for 127.0.0.1 at 2023-04-03 09:39:49 +0300
+Processing by UsersController#show as */*
+Completed 500 Internal Server Error in 28ms (Allocations: 5247)
+
+
+  
+NoMethodError (undefined method `has_secure' for User (call 'User.connection' to establish a connection):Class
+Did you mean?  has_secure_token):
+  
+app/models/user.rb:3:in `<class:User>'
+app/models/user.rb:1:in `<top (required)>'
+app/controllers/application_controller.rb:7:in `authorized'
+Started GET "/me" for 127.0.0.1 at 2023-04-03 09:45:15 +0300
+Processing by UsersController#show as */*
+Completed 500 Internal Server Error in 13ms (Allocations: 4504)
+
+
+  
+NoMethodError (undefined method `has_secure' for User (call 'User.connection' to establish a connection):Class
+Did you mean?  has_secure_token):
+  
+app/models/user.rb:3:in `<class:User>'
+app/models/user.rb:1:in `<top (required)>'
+app/controllers/application_controller.rb:7:in `authorized'
+Started POST "/signup" for 127.0.0.1 at 2023-04-03 09:45:31 +0300
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"lizdmukami", "email"=>"lizdmukami@gmail.com", "password"=>"[FILTERED]"}
+Completed 500 Internal Server Error in 20ms (Allocations: 7444)
+
+
+  
+NoMethodError (undefined method `has_secure' for User (call 'User.connection' to establish a connection):Class
+Did you mean?  has_secure_token):
+  
+app/models/user.rb:3:in `<class:User>'
+app/models/user.rb:1:in `<top (required)>'
+app/controllers/users_controller.rb:6:in `create'
+Started GET "/me" for 127.0.0.1 at 2023-04-03 09:45:36 +0300
+Processing by UsersController#show as */*
+Completed 500 Internal Server Error in 17ms (Allocations: 4256)
+
+
+  
+NoMethodError (undefined method `has_secure' for User (call 'User.connection' to establish a connection):Class
+Did you mean?  has_secure_token):
+  
+app/models/user.rb:3:in `<class:User>'
+app/models/user.rb:1:in `<top (required)>'
+app/controllers/application_controller.rb:7:in `authorized'
+Started GET "/me" for 127.0.0.1 at 2023-04-03 11:07:41 +0300
+Processing by UsersController#show as */*
+Completed 500 Internal Server Error in 11ms (Allocations: 4501)
+
+
+  
+NoMethodError (undefined method `has_secure' for User (call 'User.connection' to establish a connection):Class
+Did you mean?  has_secure_token):
+  
+app/models/user.rb:3:in `<class:User>'
+app/models/user.rb:1:in `<top (required)>'
+app/controllers/application_controller.rb:7:in `authorized'
+Started GET "/me" for 127.0.0.1 at 2023-04-03 11:08:45 +0300
+Processing by UsersController#show as */*
+Completed 500 Internal Server Error in 19ms (Allocations: 4251)
+
+
+  
+NoMethodError (undefined method `has_secure' for User (call 'User.connection' to establish a connection):Class
+Did you mean?  has_secure_token):
+  
+app/models/user.rb:3:in `<class:User>'
+app/models/user.rb:1:in `<top (required)>'
+app/controllers/application_controller.rb:7:in `authorized'
+Started POST "/signup" for 127.0.0.1 at 2023-04-03 11:09:03 +0300
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"lizdmukami", "email"=>"lizdmukami@gmail.com", "password"=>"[FILTERED]"}
+Completed 500 Internal Server Error in 9ms (Allocations: 4274)
+
+
+  
+NoMethodError (undefined method `has_secure' for User (call 'User.connection' to establish a connection):Class
+Did you mean?  has_secure_token):
+  
+app/models/user.rb:3:in `<class:User>'
+app/models/user.rb:1:in `<top (required)>'
+app/controllers/users_controller.rb:6:in `create'
+Started GET "/me" for 127.0.0.1 at 2023-04-03 11:11:16 +0300
+Processing by UsersController#show as */*
+Completed 500 Internal Server Error in 10ms (Allocations: 4256)
+
+
+  
+NoMethodError (undefined method `has_secure' for User (call 'User.connection' to establish a connection):Class
+Did you mean?  has_secure_token):
+  
+app/models/user.rb:3:in `<class:User>'
+app/models/user.rb:1:in `<top (required)>'
+app/controllers/application_controller.rb:7:in `authorized'
+Started POST "/signup" for 127.0.0.1 at 2023-04-03 11:11:32 +0300
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"lizdmukami", "email"=>"lizdmukami@gmail.com", "password"=>"[FILTERED]"}
+Completed 500 Internal Server Error in 13ms (Allocations: 4265)
+
+
+  
+NoMethodError (undefined method `has_secure' for User (call 'User.connection' to establish a connection):Class
+Did you mean?  has_secure_token):
+  
+app/models/user.rb:3:in `<class:User>'
+app/models/user.rb:1:in `<top (required)>'
+app/controllers/users_controller.rb:6:in `create'
+Started POST "/signup" for 127.0.0.1 at 2023-04-03 11:14:31 +0300
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"lizdmukami", "email"=>"lizdmukami@gmail.com", "password"=>"[FILTERED]"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:6:in `create'
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.9ms | Allocations: 4551)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'password' for User.):
+  
+app/controllers/users_controller.rb:6:in `create'
+Started POST "/signup" for 127.0.0.1 at 2023-04-03 11:25:34 +0300
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"lizdmukami", "email"=>"lizdmukami@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:6:in `create'
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.5ms | Allocations: 3821)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'password' for User.):
+  
+app/controllers/users_controller.rb:6:in `create'
+Started POST "/signup" for 127.0.0.1 at 2023-04-03 11:27:47 +0300
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"lizdmukami", "email"=>"lizdmukami@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+[31mUnpermitted parameters: :password, :password_confirmation[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mUser Exists? (1.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "lizdmukami"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `create'
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 3.4ms | Allocations: 9826)
+
+
+  
+NoMethodError (undefined method `password?' for #<User:0x00007ff0d80ca7d0>
+Did you mean?  password_digest?):
+  
+app/controllers/users_controller.rb:6:in `create'
+Started GET "/me" for 127.0.0.1 at 2023-04-03 11:27:52 +0300
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorized'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.19ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 12ms (Views: 3.9ms | ActiveRecord: 0.3ms | Allocations: 1235)
+
+
+Started POST "/signup" for 127.0.0.1 at 2023-04-03 11:28:43 +0300
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"lizdmukami", "email"=>"lizdmukami@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+[31mUnpermitted parameters: :password, :password_confirmation[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mUser Exists? (1.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "lizdmukami"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `create'
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 1.9ms | Allocations: 5040)
+
+
+  
+NoMethodError (undefined method `password?' for #<User:0x00007ff0f07e1f38>
+Did you mean?  password_digest?):
+  
+app/controllers/users_controller.rb:6:in `create'
+Started POST "/signup" for 127.0.0.1 at 2023-04-03 11:31:03 +0300
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"lizdmukami", "email"=>"lizdmukami@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+[31mUnpermitted parameters: :password, :password_confirmation[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "lizdmukami"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `create'
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 1.6ms | Allocations: 9242)
+
+
+  
+NoMethodError (undefined method `password?' for #<User:0x00007ff0f80311c8>
+Did you mean?  password_digest?):
+  
+app/controllers/users_controller.rb:6:in `create'
+Started GET "/me" for 127.0.0.1 at 2023-04-03 11:31:15 +0300
+Processing by UsersController#show as */*
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorized'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.19ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 11ms (Views: 1.7ms | ActiveRecord: 1.2ms | Allocations: 924)
+
+
+Started POST "/login" for 127.0.0.1 at 2023-04-03 11:31:20 +0300
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"lizdmukami", "password"=>"[FILTERED]", "session"=>{"username"=>"lizdmukami", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "lizdmukami"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.33ms)
+Completed 401 Unauthorized in 8ms (Views: 3.0ms | ActiveRecord: 0.5ms | Allocations: 715)
+
+
+Started POST "/signup" for 127.0.0.1 at 2023-04-03 11:31:59 +0300
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"lizdmukami", "email"=>"lizdmukami@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+[31mUnpermitted parameters: :password, :password_confirmation[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "lizdmukami"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `create'
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 1.1ms | Allocations: 5032)
+
+
+  
+NoMethodError (undefined method `password?' for #<User:0x000055dd5dad98d8>
+Did you mean?  password_digest?):
+  
+app/controllers/users_controller.rb:6:in `create'
+Started POST "/signup" for 127.0.0.1 at 2023-04-03 11:37:26 +0300
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"lizdmukami", "email"=>"lizdmukami@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:6:in `create'
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms | Allocations: 3861)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'password' for User.):
+  
+app/controllers/users_controller.rb:6:in `create'
+Started POST "/login" for 127.0.0.1 at 2023-04-03 11:37:32 +0300
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"lizdmukami", "password"=>"[FILTERED]", "session"=>{"username"=>"lizdmukami", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "lizdmukami"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.36ms)
+Completed 401 Unauthorized in 8ms (Views: 2.4ms | ActiveRecord: 0.4ms | Allocations: 854)
+
+
+Started GET "/me" for 127.0.0.1 at 2023-04-03 11:41:16 +0300
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorized'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.23ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 16ms (Views: 2.9ms | ActiveRecord: 0.5ms | Allocations: 3592)
+
+
+Started GET "/me" for 127.0.0.1 at 2023-04-03 11:41:17 +0300
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorized'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.18ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 10ms (Views: 1.2ms | ActiveRecord: 0.4ms | Allocations: 780)
+
+
+Started POST "/signup" for 127.0.0.1 at 2023-04-03 11:42:11 +0300
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"lizdmukami", "email"=>"lizdmukami@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+Completed 400 Bad Request in 12ms (ActiveRecord: 0.0ms | Allocations: 3330)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user
+Did you mean?  username
+               password
+               password_confirmation
+               controller):
+  
+app/controllers/users_controller.rb:26:in `user_params'
+app/controllers/users_controller.rb:6:in `create'
+Started POST "/signup" for 127.0.0.1 at 2023-04-03 11:47:45 +0300
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"lizdmukami", "email"=>"lizdmukami@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:6:in `create'
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.5ms | Allocations: 4294)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'password' for User.):
+  
+app/controllers/users_controller.rb:6:in `create'
+Started POST "/signup" for 127.0.0.1 at 2023-04-03 11:48:10 +0300
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"lizdmukami", "email"=>"lizdmukami@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+Completed 400 Bad Request in 2ms (Allocations: 942)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user
+Did you mean?  username
+               password
+               password_confirmation
+               controller):
+  
+app/controllers/users_controller.rb:26:in `user_params'
+app/controllers/users_controller.rb:6:in `create'
+Started POST "/signup" for 127.0.0.1 at 2023-04-03 11:48:50 +0300
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"lizdmukami", "email"=>"lizdmukami@gmail.com", "password"=>"[FILTERED]", "passwordConfirmation"=>"[FILTERED]"}
+Completed 400 Bad Request in 1ms (Allocations: 142)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user
+Did you mean?  username
+               password
+               passwordConfirmation
+               controller):
+  
+app/controllers/users_controller.rb:26:in `user_params'
+app/controllers/users_controller.rb:6:in `create'
+Started POST "/signup" for 127.0.0.1 at 2023-04-03 11:48:55 +0300
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"lizdmukami", "email"=>"lizdmukami@gmail.com", "password"=>"[FILTERED]", "passwordConfirmation"=>"[FILTERED]"}
+Completed 400 Bad Request in 1ms (Allocations: 143)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user
+Did you mean?  username
+               password
+               passwordConfirmation
+               controller):
+  
+app/controllers/users_controller.rb:26:in `user_params'
+app/controllers/users_controller.rb:6:in `create'
+Started GET "/me" for 127.0.0.1 at 2023-04-03 11:52:35 +0300
+Processing by UsersController#show as */*
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:7:in `authorized'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorized'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 21ms (Views: 1.2ms | ActiveRecord: 2.3ms | Allocations: 1920)
+
+
+Started POST "/signup" for 127.0.0.1 at 2023-04-03 11:53:31 +0300
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"liz", "email"=>"liz@gmail.com", "password"=>"[FILTERED]", "passwordConfirmation"=>"[FILTERED]"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 140)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user
+Did you mean?  username
+               password
+               passwordConfirmation
+               controller):
+  
+app/controllers/users_controller.rb:26:in `user_params'
+app/controllers/users_controller.rb:6:in `create'
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-03 12:02:05 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started POST "/signup" for 127.0.0.1 at 2023-04-03 12:02:18 +0300
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"liz", "email"=>"liz@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+Completed 400 Bad Request in 1ms (Allocations: 140)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user
+Did you mean?  username
+               password
+               password_confirmation
+               controller):
+  
+app/controllers/users_controller.rb:26:in `user_params'
+app/controllers/users_controller.rb:6:in `create'
+Started POST "/signup" for 127.0.0.1 at 2023-04-03 12:12:07 +0300
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"liz", "email"=>"liz@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+Completed 400 Bad Request in 12ms (ActiveRecord: 0.0ms | Allocations: 4823)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user
+Did you mean?  username
+               password
+               password_confirmation
+               controller):
+  
+app/controllers/users_controller.rb:26:in `user_params'
+app/controllers/users_controller.rb:6:in `create'
+Started POST "/signup" for 127.0.0.1 at 2023-04-03 12:22:57 +0300
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"liz", "email"=>"liz@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:6:in `create'
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 1.2ms | Allocations: 4577)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'password' for User.):
+  
+app/controllers/users_controller.rb:6:in `create'
+Started POST "/signup" for 127.0.0.1 at 2023-04-03 12:23:34 +0300
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"liz", "email"=>"liz@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+Completed 500 Internal Server Error in 2ms (Allocations: 901)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/controllers/users_controller.rb:26:in `user_params'
+app/controllers/users_controller.rb:6:in `create'
+Started POST "/signup" for 127.0.0.1 at 2023-04-03 12:24:14 +0300
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"liz", "email"=>"liz@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+Completed 400 Bad Request in 4ms (Allocations: 938)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user
+Did you mean?  username
+               password
+               password_confirmation
+               controller):
+  
+app/controllers/users_controller.rb:26:in `user_params'
+app/controllers/users_controller.rb:6:in `create'
+Started POST "/signup" for 127.0.0.1 at 2023-04-03 12:28:20 +0300
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"liz", "email"=>"liz@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+Completed 400 Bad Request in 1ms (Allocations: 145)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user
+Did you mean?  username
+               password
+               password_confirmation
+               controller):
+  
+app/controllers/users_controller.rb:26:in `user_params'
+app/controllers/users_controller.rb:6:in `create'
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-03 12:31:01 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-03 12:31:01 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-03 12:34:15 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started POST "/signup" for 127.0.0.1 at 2023-04-03 12:34:23 +0300
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"username"=>"liz", "email"=>"liz@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:6:in `create'
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 1.8ms | Allocations: 3467)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'password' for User.):
+  
+app/controllers/users_controller.rb:6:in `create'
+Started POST "/signup" for 127.0.0.1 at 2023-04-03 12:37:02 +0300
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"username"=>"liz", "email"=>"liz@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "liz"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mUser Create (7.0ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "liz"], ["email", "liz@gmail.com"], ["password_digest", "$2a$12$3ckuoL5j3tScDAyYD9Xcye9Dlyw4k9MbQHNPu9gNxrdAkK3MVv6AG"], ["created_at", "2023-04-03 09:37:02.476854"], ["updated_at", "2023-04-03 09:37:02.476854"]]
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `create'
+Completed 500 Internal Server Error in 270ms (ActiveRecord: 10.6ms | Allocations: 11100)
+
+
+  
+NameError (undefined local variable or method `user' for #<UsersController:0x000000000081b0>
+Did you mean?  @user):
+  
+app/controllers/users_controller.rb:7:in `create'
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/signup" for 127.0.0.1 at 2023-04-03 12:47:54 +0300
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"username"=>"liz", "email"=>"liz@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "liz"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `create'
+Completed 500 Internal Server Error in 258ms (ActiveRecord: 0.9ms | Allocations: 7703)
+
+
+  
+NameError (undefined local variable or method `user' for #<UsersController:0x00000000009010>
+Did you mean?  @user):
+  
+app/controllers/users_controller.rb:7:in `create'
+Started POST "/signup" for 127.0.0.1 at 2023-04-03 12:49:25 +0300
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"username"=>"liz", "email"=>"liz@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "liz"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "liz"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.17ms)
+Completed 422 Unprocessable Entity in 267ms (Views: 1.2ms | ActiveRecord: 1.5ms | Allocations: 9922)
+
+
+Started POST "/login" for 127.0.0.1 at 2023-04-03 12:50:55 +0300
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"lizdmukami", "password"=>"[FILTERED]", "session"=>{"username"=>"lizdmukami", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "lizdmukami"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 401 Unauthorized in 4ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 733)
+
+
+Started POST "/login" for 127.0.0.1 at 2023-04-03 12:51:22 +0300
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"liz", "password"=>"[FILTERED]", "session"=>{"username"=>"liz", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "liz"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.21ms)
+Completed 201 Created in 262ms (Views: 11.3ms | ActiveRecord: 0.4ms | Allocations: 2231)
+
+
+Started GET "/workouts" for 127.0.0.1 at 2023-04-03 12:51:22 +0300
+Processing by WorkoutsController#index as */*
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorized'
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.4ms)
+Completed 201 Created in 28ms (Views: 4.7ms | ActiveRecord: 1.4ms | Allocations: 2243)
+
+
+Started POST "/workouts" for 127.0.0.1 at 2023-04-03 12:52:05 +0300
+Processing by WorkoutsController#create as */*
+  Parameters: {"workout_name"=>"3/4 Sit-Up", "date"=>"Here's areas that got a burnout.\n  \n## Body Parts\n\n- Waist\n- Abs\n- Body Weight\n\n## Date\n\n**dd/mm/yyyy** 03/04/2023\n  ", "minutes_to_complete"=>"10", "workout"=>{"workout_name"=>"3/4 Sit-Up", "minutes_to_complete"=>"10", "date"=>"Here's areas that got a burnout.\n  \n## Body Parts\n\n- Waist\n- Abs\n- Body Weight\n\n## Date\n\n**dd/mm/yyyy** 03/04/2023\n  "}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorized'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.6ms | Allocations: 2422)
+
+
+  
+NameError (undefined local variable or method `workout_params' for #<WorkoutsController:0x0000000000a078>
+Did you mean?  workout_path):
+  
+app/controllers/workouts_controller.rb:10:in `create'
+Started GET "/me" for 127.0.0.1 at 2023-04-03 12:53:24 +0300
+Processing by UsersController#show as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:7:in `authorized'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorized'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16:in `show'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "liz"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `show'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.43ms)
+Completed 201 Created in 19ms (Views: 1.8ms | ActiveRecord: 2.3ms | Allocations: 6523)
+
+
+Started GET "/workouts" for 127.0.0.1 at 2023-04-03 12:53:24 +0300
+Processing by WorkoutsController#index as */*
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorized'
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.09ms)
+Completed 201 Created in 9ms (Views: 3.0ms | ActiveRecord: 1.3ms | Allocations: 1695)
+
+
+Started POST "/workouts" for 127.0.0.1 at 2023-04-03 12:53:32 +0300
+Processing by WorkoutsController#create as */*
+  Parameters: {"workout_name"=>"3/4 Sit-Up", "date"=>"Here's areas that got a burnout.\n  \n## Body Parts\n\n- Waist\n- Abs\n- Body Weight\n\n## Date\n\n**dd/mm/yyyy** 03/04/2023\n  ", "minutes_to_complete"=>"10", "workout"=>{"workout_name"=>"3/4 Sit-Up", "minutes_to_complete"=>"10", "date"=>"Here's areas that got a burnout.\n  \n## Body Parts\n\n- Waist\n- Abs\n- Body Weight\n\n## Date\n\n**dd/mm/yyyy** 03/04/2023\n  "}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorized'
+[31mUnpermitted parameter: :workout[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/workouts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/workouts_controller.rb:10:in `create'
+  [1m[36mWorkout Create (0.3ms)[0m  [1m[32mINSERT INTO "workouts" ("workout_name", "minutes_to_complete", "date", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["workout_name", "3/4 Sit-Up"], ["minutes_to_complete", 10], ["date", "Here's areas that got a burnout.\n  \n## Body Parts\n\n- Waist\n- Abs\n- Body Weight\n\n## Date\n\n**dd/mm/yyyy** 03/04/2023\n  "], ["user_id", 1], ["created_at", "2023-04-03 09:53:32.118299"], ["updated_at", "2023-04-03 09:53:32.118299"]]
+  ↳ app/controllers/workouts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/workouts_controller.rb:10:in `create'
+[active_model_serializers] Rendered WorkoutSerializer with ActiveModelSerializers::Adapter::Attributes (0.64ms)
+Completed 201 Created in 34ms (Views: 4.9ms | ActiveRecord: 3.7ms | Allocations: 11988)
+
+
+Started GET "/workouts" for 127.0.0.1 at 2023-04-03 12:53:32 +0300
+Processing by WorkoutsController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorized'
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/workouts_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.39ms)
+Completed 201 Created in 13ms (Views: 8.0ms | ActiveRecord: 0.6ms | Allocations: 2335)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2023-04-03 12:53:46 +0300
+Processing by SessionsController#destroy as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorized'
+Completed 204 No Content in 2ms (ActiveRecord: 0.2ms | Allocations: 621)
+
+
+Started GET "/me" for 127.0.0.1 at 2023-04-03 13:15:26 +0300
+Processing by UsersController#show as */*
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:7:in `authorized'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorized'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 11ms (Views: 3.8ms | ActiveRecord: 1.2ms | Allocations: 1491)
+
+
+Started GET "/me" for 127.0.0.1 at 2023-04-03 13:15:27 +0300
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorized'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 5ms (Views: 1.1ms | ActiveRecord: 0.2ms | Allocations: 850)
+
+
+Started GET "/me" for 127.0.0.1 at 2023-04-03 13:15:31 +0300
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorized'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.16ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 5ms (Views: 1.1ms | ActiveRecord: 0.2ms | Allocations: 845)
+
+
+Started GET "/me" for 127.0.0.1 at 2023-04-03 13:15:33 +0300
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorized'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 4ms (Views: 0.8ms | ActiveRecord: 0.3ms | Allocations: 846)
+
+
+Started GET "/me" for 127.0.0.1 at 2023-04-03 13:15:34 +0300
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorized'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 4ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 842)
+
+
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-03 15:08:38 +0300
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-03 15:08:38 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-03 15:08:38 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started POST "/signup" for 127.0.0.1 at 2023-04-04 19:14:15 +0300
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Error occurred while parsing request parameters.
+Contents:
+
+----------------------------850462972782937615747763
+Content-Disposition: form-data; name="username"
+
+paul
+----------------------------850462972782937615747763
+Content-Disposition: form-data; name="email"
+
+paul@mail.com
+----------------------------850462972782937615747763
+Content-Disposition: form-data; name="password"
+
+1234
+----------------------------850462972782937615747763--
+
+Processing by UsersController#create as */*
+Completed 400 Bad Request in 12ms (ActiveRecord: 0.0ms | Allocations: 4886)
+
+
+  
+ActionDispatch::Http::Parameters::ParseError (783: unexpected token at '----------------------------850462972782937615747763
+Content-Disposition: form-data; name="username"
+
+paul
+----------------------------850462972782937615747763
+Content-Disposition: form-data; name="email"
+
+paul@mail.com
+----------------------------850462972782937615747763
+Content-Disposition: form-data; name="password"
+
+1234
+----------------------------850462972782937615747763--
+'):
+  
+app/controllers/users_controller.rb:32:in `user_params'
+app/controllers/users_controller.rb:11:in `create'
+Started POST "/signup" for 127.0.0.1 at 2023-04-04 19:14:57 +0300
+Error occurred while parsing request parameters.
+Contents:
+
+----------------------------501713974466082218897270
+Content-Disposition: form-data; name="username"
+
+paul
+----------------------------501713974466082218897270
+Content-Disposition: form-data; name="email"
+
+paul@mail.com
+----------------------------501713974466082218897270
+Content-Disposition: form-data; name="password_digest"
+
+1234
+----------------------------501713974466082218897270--
+
+Processing by UsersController#create as */*
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 119)
+
+
+  
+ActionDispatch::Http::Parameters::ParseError (783: unexpected token at '----------------------------501713974466082218897270
+Content-Disposition: form-data; name="username"
+
+paul
+----------------------------501713974466082218897270
+Content-Disposition: form-data; name="email"
+
+paul@mail.com
+----------------------------501713974466082218897270
+Content-Disposition: form-data; name="password_digest"
+
+1234
+----------------------------501713974466082218897270--
+'):
+  
+app/controllers/users_controller.rb:32:in `user_params'
+app/controllers/users_controller.rb:11:in `create'
+Started POST "/signup" for 127.0.0.1 at 2023-04-04 19:17:20 +0300
+Error occurred while parsing request parameters.
+Contents:
+
+----------------------------106602471484870679492679
+Content-Disposition: form-data; name="username"
+
+paul
+----------------------------106602471484870679492679
+Content-Disposition: form-data; name="email"
+
+paul@mail.com
+----------------------------106602471484870679492679
+Content-Disposition: form-data; name="password_digest"
+
+1234
+----------------------------106602471484870679492679--
+
+Processing by UsersController#create as */*
+Completed 400 Bad Request in 2ms (Allocations: 997)
+
+
+  
+ActionDispatch::Http::Parameters::ParseError (783: unexpected token at '----------------------------106602471484870679492679
+Content-Disposition: form-data; name="username"
+
+paul
+----------------------------106602471484870679492679
+Content-Disposition: form-data; name="email"
+
+paul@mail.com
+----------------------------106602471484870679492679
+Content-Disposition: form-data; name="password_digest"
+
+1234
+----------------------------106602471484870679492679--
+'):
+  
+app/controllers/users_controller.rb:32:in `user_params'
+app/controllers/users_controller.rb:11:in `create'
+Started POST "/login" for 127.0.0.1 at 2023-04-04 19:20:07 +0300
+Error occurred while parsing request parameters.
+Contents:
+
+----------------------------418002402418253814022001
+Content-Disposition: form-data; name="username"
+
+liz
+----------------------------418002402418253814022001
+Content-Disposition: form-data; name="password"
+
+12345
+----------------------------418002402418253814022001--
+
+  
+ActionDispatch::Http::Parameters::ParseError (783: unexpected token at '----------------------------418002402418253814022001
+Content-Disposition: form-data; name="username"
+
+liz
+----------------------------418002402418253814022001
+Content-Disposition: form-data; name="password"
+
+12345
+----------------------------418002402418253814022001--
+'):
+  
+actionpack (6.1.3.2) lib/action_dispatch/http/parameters.rb:96:in `rescue in parse_formatted_parameters'
+actionpack (6.1.3.2) lib/action_dispatch/http/parameters.rb:92:in `parse_formatted_parameters'
+actionpack (6.1.3.2) lib/action_dispatch/http/request.rb:399:in `block in POST'
+rack (2.2.3) lib/rack/request.rb:69:in `fetch'
+rack (2.2.3) lib/rack/request.rb:69:in `fetch_header'
+actionpack (6.1.3.2) lib/action_dispatch/http/request.rb:398:in `POST'
+actionpack (6.1.3.2) lib/action_dispatch/http/parameters.rb:55:in `parameters'
+actionpack (6.1.3.2) lib/action_controller/metal/params_wrapper.rb:284:in `_wrapper_enabled?'
+actionpack (6.1.3.2) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+activerecord (6.1.3.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.3.2) lib/abstract_controller/base.rb:165:in `process'
+actionpack (6.1.3.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.2) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.2) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+railties (6.1.3.2) lib/rails/engine.rb:539:in `call'
+puma (5.3.2) lib/puma/configuration.rb:249:in `call'
+puma (5.3.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.3.2) lib/puma/thread_pool.rb:338:in `with_force_shutdown'
+puma (5.3.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.3.2) lib/puma/server.rb:438:in `process_client'
+puma (5.3.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Error occurred while parsing request parameters.
+Contents:
+
+----------------------------418002402418253814022001
+Content-Disposition: form-data; name="username"
+
+liz
+----------------------------418002402418253814022001
+Content-Disposition: form-data; name="password"
+
+12345
+----------------------------418002402418253814022001--
+
+Started POST "/signup" for 127.0.0.1 at 2023-04-04 19:22:45 +0300
+Error occurred while parsing request parameters.
+Contents:
+
+----------------------------362348913936657981443565
+Content-Disposition: form-data; name="username"
+
+paul
+----------------------------362348913936657981443565
+Content-Disposition: form-data; name="email"
+
+paul@mail.com
+----------------------------362348913936657981443565
+Content-Disposition: form-data; name="password"
+
+1234
+----------------------------362348913936657981443565--
+
+Processing by UsersController#create as */*
+Completed 400 Bad Request in 3ms (Allocations: 997)
+
+
+  
+ActionDispatch::Http::Parameters::ParseError (783: unexpected token at '----------------------------362348913936657981443565
+Content-Disposition: form-data; name="username"
+
+paul
+----------------------------362348913936657981443565
+Content-Disposition: form-data; name="email"
+
+paul@mail.com
+----------------------------362348913936657981443565
+Content-Disposition: form-data; name="password"
+
+1234
+----------------------------362348913936657981443565--
+'):
+  
+app/controllers/users_controller.rb:32:in `user_params'
+app/controllers/users_controller.rb:11:in `create'
+Started POST "/signup" for 127.0.0.1 at 2023-04-04 19:24:04 +0300
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Error occurred while parsing request parameters.
+Contents:
+
+----------------------------745838614571496718989944
+Content-Disposition: form-data; name="username"
+
+paul
+----------------------------745838614571496718989944
+Content-Disposition: form-data; name="email"
+
+paul@mail.com
+----------------------------745838614571496718989944
+Content-Disposition: form-data; name="password"
+
+1234
+----------------------------745838614571496718989944--
+
+Processing by UsersController#create as */*
+Completed 400 Bad Request in 9ms (ActiveRecord: 0.0ms | Allocations: 4886)
+
+
+  
+ActionDispatch::Http::Parameters::ParseError (783: unexpected token at '----------------------------745838614571496718989944
+Content-Disposition: form-data; name="username"
+
+paul
+----------------------------745838614571496718989944
+Content-Disposition: form-data; name="email"
+
+paul@mail.com
+----------------------------745838614571496718989944
+Content-Disposition: form-data; name="password"
+
+1234
+----------------------------745838614571496718989944--
+'):
+  
+app/controllers/users_controller.rb:32:in `user_params'
+app/controllers/users_controller.rb:11:in `create'
+Started POST "/signup" for 127.0.0.1 at 2023-04-04 19:25:58 +0300
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Error occurred while parsing request parameters.
+Contents:
+
+----------------------------213276507692491385490993
+Content-Disposition: form-data; name="username"
+
+paul
+----------------------------213276507692491385490993
+Content-Disposition: form-data; name="email"
+
+paul@mail.com
+----------------------------213276507692491385490993
+Content-Disposition: form-data; name="password"
+
+1234
+----------------------------213276507692491385490993--
+
+Processing by UsersController#create as */*
+Completed 400 Bad Request in 9ms (ActiveRecord: 0.0ms | Allocations: 4885)
+
+
+  
+ActionDispatch::Http::Parameters::ParseError (783: unexpected token at '----------------------------213276507692491385490993
+Content-Disposition: form-data; name="username"
+
+paul
+----------------------------213276507692491385490993
+Content-Disposition: form-data; name="email"
+
+paul@mail.com
+----------------------------213276507692491385490993
+Content-Disposition: form-data; name="password"
+
+1234
+----------------------------213276507692491385490993--
+'):
+  
+app/controllers/users_controller.rb:32:in `user_params'
+app/controllers/users_controller.rb:11:in `create'
+Started POST "/signup" for 127.0.0.1 at 2023-04-04 19:30:28 +0300
+Error occurred while parsing request parameters.
+Contents:
+
+{
+  "username": "paul",
+  "email": "paul@mail.com"'
+  "password": 123456
+}
+Processing by UsersController#create as */*
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 124)
+
+
+  
+ActionDispatch::Http::Parameters::ParseError (783: unexpected token at '{
+  "username": "paul",
+  "email": "paul@mail.com"'
+  "password": 123456
+}'):
+  
+app/controllers/users_controller.rb:32:in `user_params'
+app/controllers/users_controller.rb:11:in `create'
+Started POST "/signup" for 127.0.0.1 at 2023-04-04 19:31:14 +0300
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"paul", "email"=>"paul@mail.com", "password"=>"[FILTERED]"}
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.7ms | Allocations: 4103)
+
+
+  
+NoMethodError (undefined method `empty?' for 123456:Integer):
+  
+app/controllers/users_controller.rb:11:in `create'
+Started POST "/signup" for 127.0.0.1 at 2023-04-04 19:33:40 +0300
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"paul", "email"=>"paul@mail.com", "password"=>"[FILTERED]", "user"=>{"username"=>"paul", "email"=>"paul@mail.com"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:11:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "paul"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `create'
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "paul"], ["email", "paul@mail.com"], ["password_digest", "$2a$12$9heqIlhByuaOYDZ.3YA2G.EsS9E/BqLzP0A3iv7ikkRN2AUnEL2DS"], ["created_at", "2023-04-04 16:33:41.261117"], ["updated_at", "2023-04-04 16:33:41.261117"]]
+  ↳ app/controllers/users_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:11:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "paul"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.4ms)
+Completed 201 Created in 294ms (Views: 4.8ms | ActiveRecord: 4.4ms | Allocations: 10676)
+
+
+Started POST "/login" for 127.0.0.1 at 2023-04-04 19:34:08 +0300
+Processing by AuthController#create as */*
+  Parameters: {"username"=>"paul", "password"=>"[FILTERED]", "auth"=>{"username"=>"paul", "password"=>"[FILTERED]"}}
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.0ms | Allocations: 165)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user
+Did you mean?  username
+               password
+               auth
+               controller):
+  
+app/controllers/auth_controller.rb:20:in `user_login_params'
+app/controllers/auth_controller.rb:5:in `create'
+Started POST "/login" for 127.0.0.1 at 2023-04-04 19:36:48 +0300
+Processing by AuthController#create as */*
+  Parameters: {"username"=>"paul", "password"=>"[FILTERED]", "auth"=>{"username"=>"paul", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :auth[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/auth_controller.rb:5:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "paul"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:5:in `create'
+[31mUnpermitted parameter: :auth[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.15ms)
+Completed 202 Accepted in 279ms (Views: 0.6ms | ActiveRecord: 1.1ms | Allocations: 5582)
+
+
+Started GET "/workouts" for 127.0.0.1 at 2023-04-04 19:39:59 +0300
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by WorkoutsController#index as */*
+  Parameters: {"username"=>"paul", "password"=>"[FILTERED]", "workout"=>{}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.05ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.7ms | ActiveRecord: 0.5ms | Allocations: 423)
+
+
+Started GET "/workouts" for 127.0.0.1 at 2023-04-04 19:40:30 +0300
+Processing by WorkoutsController#index as */*
+  Parameters: {"username"=>"paul", "password"=>"[FILTERED]", "workout"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/workouts_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (15.63ms)
+Completed 201 Created in 84ms (Views: 74.6ms | ActiveRecord: 1.4ms | Allocations: 13048)
+
+
+Started GET "/workouts" for 127.0.0.1 at 2023-04-04 19:42:36 +0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by WorkoutsController#index as */*
+  Parameters: {"username"=>"paul", "password"=>"[FILTERED]", "workout"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mWorkout Load (0.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/workouts_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.25ms)
+Completed 201 Created in 25ms (Views: 4.5ms | ActiveRecord: 2.5ms | Allocations: 7461)
+
+
+Started POST "/workouts" for 127.0.0.1 at 2023-04-04 19:45:04 +0300
+Processing by WorkoutsController#create as */*
+  Parameters: {"workout_name"=>"Push-Ups", "minutes_to_complete"=>15, "date"=>"04/04/2023", "workout"=>{"workout_name"=>"Push-Ups", "minutes_to_complete"=>15, "date"=>"04/04/2023"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+[31mUnpermitted parameter: :workout[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.19ms)
+Completed 422 Unprocessable Entity in 23ms (Views: 1.6ms | ActiveRecord: 0.5ms | Allocations: 7154)
+
+
+Started POST "/workouts" for 127.0.0.1 at 2023-04-04 19:45:41 +0300
+Processing by WorkoutsController#create as */*
+  Parameters: {"workout_name"=>"Push-Ups", "minutes_to_complete"=>15, "date"=>"04/04/2023", "workout"=>{"workout_name"=>"Push-Ups", "minutes_to_complete"=>15, "date"=>"04/04/2023"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+[31mUnpermitted parameter: :workout[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 422 Unprocessable Entity in 7ms (Views: 1.4ms | ActiveRecord: 0.5ms | Allocations: 2097)
+
+
+Started POST "/workouts" for 127.0.0.1 at 2023-04-04 19:46:53 +0300
+Processing by WorkoutsController#create as */*
+  Parameters: {"workout_name"=>"Push-Ups", "minutes_to_complete"=>15, "date"=>"04/04/2023", "workout"=>{"workout_name"=>"Push-Ups", "minutes_to_complete"=>15, "date"=>"04/04/2023"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+[31mUnpermitted parameter: :workout[0m
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 422 Unprocessable Entity in 12ms (Views: 3.4ms | ActiveRecord: 0.2ms | Allocations: 2083)
+
+
+Started POST "/workouts" for 127.0.0.1 at 2023-04-04 19:48:39 +0300
+Processing by WorkoutsController#create as */*
+  Parameters: {"workout_name"=>"Push-Ups", "minutes_to_complete"=>15, "date"=>"04/04/2023", "user_id"=>2, "workout"=>{"workout_name"=>"Push-Ups", "minutes_to_complete"=>15, "date"=>"04/04/2023", "user_id"=>2}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+[31mUnpermitted parameters: :user_id, :workout[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.18ms)
+Completed 422 Unprocessable Entity in 14ms (Views: 4.3ms | ActiveRecord: 0.5ms | Allocations: 2085)
+
+
+Started POST "/login" for 127.0.0.1 at 2023-04-04 19:50:54 +0300
+Processing by AuthController#create as */*
+  Parameters: {"username"=>"liz", "password"=>"[FILTERED]", "auth"=>{"username"=>"liz", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :auth[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "liz"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:5:in `create'
+[31mUnpermitted parameter: :auth[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Completed 401 Unauthorized in 266ms (Views: 0.7ms | ActiveRecord: 0.8ms | Allocations: 854)
+
+
+Started POST "/login" for 127.0.0.1 at 2023-04-04 19:51:06 +0300
+Processing by AuthController#create as */*
+  Parameters: {"username"=>"liz", "password"=>"[FILTERED]", "auth"=>{"username"=>"liz", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :auth[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "liz"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:5:in `create'
+[31mUnpermitted parameter: :auth[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Completed 401 Unauthorized in 259ms (Views: 0.9ms | ActiveRecord: 0.2ms | Allocations: 710)
+
+
+Started GET "/login" for 127.0.0.1 at 2023-04-04 19:51:38 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/login"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-04 19:57:37 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-04 19:57:37 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-04 19:57:37 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-04 19:57:39 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-04 19:57:39 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-04 20:00:16 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-04 20:00:16 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-04 20:00:16 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-04 20:04:58 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-04 20:04:59 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-04 20:04:59 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-04 20:04:59 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-04 20:04:59 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-04 20:04:59 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-04 20:09:44 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-04 20:09:44 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-04 20:24:43 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-04 20:24:44 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-04 20:24:44 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-04 20:24:46 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-04 20:24:47 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-04 20:24:52 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-04 20:24:54 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-04 20:24:54 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-04 20:24:54 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-04 20:25:05 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-04 20:41:55 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-04 20:41:55 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-04 20:41:55 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-04 20:41:55 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-04 20:41:55 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2023-04-04 20:41:55 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/login" for 127.0.0.1 at 2023-04-04 22:03:18 +0300
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/login"):
+  
+Started POST "/login" for 127.0.0.1 at 2023-04-04 22:04:15 +0300
+Processing by AuthController#create as */*
+  Parameters: {"username"=>"liz", "password"=>"[FILTERED]", "auth"=>{"username"=>"liz", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :auth[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "liz"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:5:in `create'
+[31mUnpermitted parameter: :auth[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 401 Unauthorized in 292ms (Views: 9.0ms | ActiveRecord: 2.2ms | Allocations: 9400)
+
+
+Started POST "/login" for 127.0.0.1 at 2023-04-04 22:04:23 +0300
+Processing by AuthController#create as */*
+  Parameters: {"username"=>"liz", "password"=>"[FILTERED]", "auth"=>{"username"=>"liz", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :auth[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "liz"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:5:in `create'
+[31mUnpermitted parameter: :auth[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Completed 401 Unauthorized in 258ms (Views: 0.8ms | ActiveRecord: 0.7ms | Allocations: 733)
+
+
+Started POST "/login" for 127.0.0.1 at 2023-04-04 22:04:35 +0300
+Processing by AuthController#create as */*
+  Parameters: {"username"=>"liz", "password"=>"[FILTERED]", "auth"=>{"username"=>"liz", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :auth[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "liz"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:5:in `create'
+[31mUnpermitted parameter: :auth[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 401 Unauthorized in 259ms (Views: 1.0ms | ActiveRecord: 0.3ms | Allocations: 731)
+
+
+Started POST "/login" for 127.0.0.1 at 2023-04-04 22:05:06 +0300
+Processing by AuthController#create as */*
+  Parameters: {"username"=>"liz", "password"=>"[FILTERED]", "auth"=>{"username"=>"liz", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :auth[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "liz"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:5:in `create'
+[31mUnpermitted parameter: :auth[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 401 Unauthorized in 261ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 710)
+
+
+Started POST "/login" for 127.0.0.1 at 2023-04-04 22:05:25 +0300
+Processing by AuthController#create as */*
+  Parameters: {"username"=>"paul", "password"=>"[FILTERED]", "auth"=>{"username"=>"paul", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :auth[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "paul"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:5:in `create'
+[31mUnpermitted parameter: :auth[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.05ms)
+Completed 401 Unauthorized in 259ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 731)
+
+
+Started POST "/login" for 127.0.0.1 at 2023-04-04 22:05:31 +0300
+Processing by AuthController#create as */*
+  Parameters: {"username"=>"paul", "password"=>"[FILTERED]", "auth"=>{"username"=>"paul", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :auth[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "paul"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:5:in `create'
+[31mUnpermitted parameter: :auth[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.71ms)
+Completed 202 Accepted in 271ms (Views: 4.3ms | ActiveRecord: 0.6ms | Allocations: 2181)
+
+
+Started GET "/workouts" for 127.0.0.1 at 2023-04-04 22:06:34 +0300
+Processing by WorkoutsController#index as */*
+  Parameters: {"username"=>"paul", "password"=>"[FILTERED]", "workout"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mWorkout Load (1.0ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/workouts_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.6ms)
+Completed 201 Created in 54ms (Views: 14.4ms | ActiveRecord: 4.2ms | Allocations: 5485)
+
+
+Started GET "/workouts" for 127.0.0.1 at 2023-04-04 22:08:05 +0300
+Processing by WorkoutsController#index as */*
+  Parameters: {"workout_name"=>"paul", "areas_targeted"=>"123456", "date"=>"02/03/2023", "workout"=>{"workout_name"=>"paul", "areas_targeted"=>"123456", "date"=>"02/03/2023"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mWorkout Load (0.8ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/workouts_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.19ms)
+Completed 201 Created in 15ms (Views: 7.4ms | ActiveRecord: 1.6ms | Allocations: 2546)
+
+
+Started POST "/workouts" for 127.0.0.1 at 2023-04-04 22:08:22 +0300
+Processing by WorkoutsController#create as */*
+  Parameters: {"workout_name"=>"paul", "areas_targeted"=>"123456", "date"=>"02/03/2023", "workout"=>{"workout_name"=>"paul", "areas_targeted"=>"123456", "date"=>"02/03/2023"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+[31mUnpermitted parameter: :workout[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.05ms)
+Completed 422 Unprocessable Entity in 68ms (Views: 1.2ms | ActiveRecord: 0.6ms | Allocations: 7703)
+
+
+Started POST "/login" for 127.0.0.1 at 2023-04-04 22:42:21 +0300
+Processing by AuthController#create as */*
+  Parameters: {"username"=>"paul", "password"=>"[FILTERED]", "auth"=>{"username"=>"paul", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :auth[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/auth_controller.rb:5:in `create'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "paul"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:5:in `create'
+[31mUnpermitted parameter: :auth[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.27ms)
+Completed 202 Accepted in 259ms (Views: 1.2ms | ActiveRecord: 1.1ms | Allocations: 1280)
+
+
+  [1m[35m (99.3ms)[0m  [1m[35mCREATE DATABASE "flatiron_mod3_development" ENCODING = 'utf8'[0m
+  [1m[35m (42.3ms)[0m  [1m[35mCREATE DATABASE "flatiron_mod3_test" ENCODING = 'utf8'[0m
+  [1m[35m (11.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5904349680232060365)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20230403000954)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "email" character varying, "password_digest" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230403000954"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateWorkouts (20230403001123)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.2ms)[0m  [1m[35mCREATE TABLE "workouts" ("id" bigserial primary key, "workout_name" character varying, "areas_targeted" text, "minutes_to_complete" integer, "date" character varying, "user_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_40b8fd8af6"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE INDEX "index_workouts_on_user_id" ON "workouts" ("user_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230403001123"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-04-04 22:17:14.711361"], ["updated_at", "2023-04-04 22:17:14.711361"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(5904349680232060365)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
